@@ -88,25 +88,31 @@ securizata
 propozitie. """
 
 
-import re
-sentence = input("Input some random text >>> ")
-def word_freq():
-    list_of_words = sentence.split(" ")
-    for item in list_of_words:
-        values = list(str(list_of_words.count(item)))
-        print(values)
-        item += 1
-        for key in range(len(list_of_words)):
-            keys = [key]
-            dictionary = dict(zip(list_of_words, values))
-    print(dictionary)
+
+# sentence = input("Input some random text >>> ").split(" ")
+# while True:
+#     word_to_check = input("Input a word from your text in order to count it"\
+#                           " frequency >>> ")
+#     if word_to_check in sentence:
+#         value = sentence.count(word_to_check)
+#         print(f"Number of appearences for word {word_to_check} = {value}")
+#         break
+#     elif not word_to_check in sentence:
+#         print(f"The word {word_to_check} is not present in yout text,"\
+#               " please try again")
 
 
-word_freq()
 
 
 ### __7__
 """ Scrieti un program care sa elimine cuvinte duplicate dintr-o propozitie."""
 
-# import re
-# sentence = input("Input some random text that will contain some duplicate words >>> ")
+# sentence = input("Input some random text that will contain some duplicate"\
+#                  " words >>> ")
+# characters = ".!?:;,"
+# for item in characters:
+#     sentence = sentence.replace(item, "")
+# sentence = sentence.split(" ")
+# sentence = dict.fromkeys(sentence)
+# sentence = ' '.join(sentence)
+# print(sentence)
