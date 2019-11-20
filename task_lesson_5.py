@@ -34,12 +34,17 @@ Ex(4 - > {1:1, 2: 4, 3: 9, 4: 16}) """
 """ Scrieti un program care sa calculeze numarul de litere si cifre din un
  text."""
 
-text = (input("Please input some text >>> ")
-for i in text:
-    if i.isdigit():
-        print("Total number of digits is %s" % i.count(i))
-    else:
-        print("Total number letters is %s" % i.count(i))
+
+# text = (input("Please input some text >>> "))
+# num_of_digits = []
+# num_of_letters = []
+# for item in text:
+#     if item.isdigit():
+#         num_of_digits.append(item)
+#     elif item.isalpha():
+#         num_of_letters.append(item)
+# print("Number of digits are %s " % len(num_of_digits))
+# print("Number of letters are %s " % len(num_of_letters))
 
 
 
@@ -53,10 +58,61 @@ securizata
 ● Contine cel putin un caracter special [!, /, #]
 ● Nu contine caractere interzire [@, ‘, {, }] """
 
+# import re
+# def check_passwd():
+#     passwd = (input("Please submit a password >>> "))
+#     if len(passwd) < 6:
+#         print("\033[91m {}\033[00m" .format("""
+#               Password should be at least 6 characters long;
+#               to contain at least one upper, one lower case, one digit
+#               and one special character !, / or #\n"""))
+#         check_passwd()
+#     elif (not re.search("[a-z]", passwd) or\
+#          not re.search("[A-Z]", passwd) or\
+#          not re.search("[0-9]", passwd) or\
+#          not re.search("[!#/]", passwd) or\
+#          re.search("[@\'{}]", passwd)):
+#          print("\033[91m {}\033[00m" .format("""
+#                Password should be at least 6 characters long;
+#                to contain at least one upper, one lower case, one digit
+#                and one special character !, / or #\n"""))
+#          check_passwd()
+#     else:
+#         print("You've entered a valid password")
+#
+# check_passwd()
+
+
 ### __6__
 """ Scrieti un program care calculeaza frecventa cu care apare un cuvint intr-o
 propozitie. """
 
 
+
+# sentence = input("Input some random text >>> ").split(" ")
+# while True:
+#     word_to_check = input("Input a word from your text in order to count it"\
+#                           " frequency >>> ")
+#     if word_to_check in sentence:
+#         value = sentence.count(word_to_check)
+#         print(f"Number of appearences for word {word_to_check} = {value}")
+#         break
+#     elif not word_to_check in sentence:
+#         print(f"The word {word_to_check} is not present in yout text,"\
+#               " please try again")
+
+
+
+
 ### __7__
 """ Scrieti un program care sa elimine cuvinte duplicate dintr-o propozitie."""
+
+# sentence = input("Input some random text that will contain some duplicate"\
+#                  " words >>> ")
+# characters = ".!?:;,"
+# for item in characters:
+#     sentence = sentence.replace(item, "")
+# sentence = sentence.split(" ")
+# sentence = dict.fromkeys(sentence)
+# sentence = ' '.join(sentence)
+# print(sentence)
