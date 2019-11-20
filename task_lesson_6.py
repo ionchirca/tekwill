@@ -79,24 +79,62 @@ Primele 22 de numere din șir sunt: 0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610
 
 
 
+def funcFibonacci(n):
+    a = 0
+    b = 1
+    for n in range(1, n):
+        a = b
+        b = a + b
+    return b
+
+for i in range(1, 20):
+    print(funcFibonacci(i))
 
 '''Scrieti o functie care valideaza o adresa de email
 gleb.tocarenco@gmail.com - valida, gleb.tocarenco@ - invalida'''
 
-import re
-email = input("Please insert your email >>> ")
-def checkEmail(email):
-    myPattern = re.compile(r"[a-zA-z0-9_.-]+@[a-zA-z0-9-]+\.[\w+]")
-    x = myPattern.finditer(email)
-    for i in x:
-        if True:
-            print("valid")
-        elif False:
-            print("not valid")
+# import re
+# email = input("Please insert your email >>> ")
+# def checkEmail(email):
+#     try:
+#         myPattern = re.compile(r"[\w.-]+@[\w-]+\.[\w+]")
+#         if myPattern.findall(email):
+#             for i in myPattern.findall(email):
+#                 if True:
+#                     print("You have entered a valid email")
+#                     break
+#         else:
+#             raise Exception("You have entered an invalid email, please try again")
+#     except Exception as ERROR:
+#         print(ERROR)
+#     finally:
+#         exit()
+#
+#
+# checkEmail(email)
 
-checkEmail(email)
+
+# import re
+# email = input("Please insert your email >>> ")
+# def checkEmail(email):
+#     myPattern = re.compile(r"[a-zA-z0-9_.-]+@[a-zA-z0-9-]+\.[a-zA-z]+")
+#     if myPattern.match(email):
+#         print("You have entered a valid email")
+#     else:
+#         print("You have entered an invalid email, please try again")
+# checkEmail(email)
+
+
 
 
 '''Scrieti o functie care primeste la input un text cu cifre si il converteste in numar,
 in caz de exceptie (este introdus o litera), afisati un mesaj de erroare si chemati
 functia de convertire din nou.'''
+
+# number = input("Please input a number >>> ")
+# def intConvert(number):
+#     try:
+#         print(f"Your number is {int(number)}")
+#     except ValueError:
+#         print("Your input isn't a number")
+# intConvert(number)
