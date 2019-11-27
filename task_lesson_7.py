@@ -18,14 +18,10 @@ functiile reduce / filter"""
 
 """Scrieti un program care transforma o lista cu elemente compuse intr-o lista
 simpla ( [1, [2, 3, [4, 5]]] -> [1,2,3,4,5] )"""
-<<<<<<< HEAD
 
-
-=======
 # myList = []
 #
 # a = iter([1, [2, 3, [4, 5]]])
->>>>>>> d4d4b33072bd9d78a0e00da9688bee1cd9862a76
 # myList.append(next(a))
 # b = iter(next(a))
 # myList.append(next(b))
@@ -34,8 +30,6 @@ simpla ( [1, [2, 3, [4, 5]]] -> [1,2,3,4,5] )"""
 # myList.append(next(c))
 # myList.append(next(c))
 # print(myList)
-
-<<<<<<< HEAD
 
 newList = []
 myList = [1, [2, 3, [4, 5]]]
@@ -55,31 +49,8 @@ def mdimensionalList(myList):
 mdimensionalList(myList)
 print (newList)
 
-
-
-
 """Scrieti o functie care primeste 2 parametri, 1 functie si o lista, rezultatul
 returnat trebuie sa fie lista modificata de fuctie:
-=======
-# myList = [[1], [2, 3], [4, 5]]
-# x = sum(myList, [])
-# print(x)
-
-# from functools import reduce
-# myList = [[1], [2, 3], [4, 5]]
-# flatList = reduce(lambda z, y :z + y, myList)
-# print(flatList)
-
-import itertools
-list_of_lists = [1, [2, 3, [4, 5]]]
-if item isdigit) in list_of_lists
-chain = list(itertools.chain(*list_of_lists))
-print(chain)
-
-"""Scrieti o functie care primeste 2 parametri, 1 functie si o lista, rezultatul
-returnat trebuie sa fie lista modificata de fuctie:
-
->>>>>>> d4d4b33072bd9d78a0e00da9688bee1cd9862a76
 In: def my_fync(lambda x: x*x, [1, 2, [3, 4, [5]]])
 Out: [1, 4, [9, 16, [25]]]"""
 
