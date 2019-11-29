@@ -20,6 +20,31 @@ MegaBytes."""
 
 
 """Find name of last modified file in your current working directory."""
+<<<<<<< HEAD
+=======
+myList = []
+import os
+# from datetime import datetime
+listFiles = os.listdir()
+
+scandirContent = os.scandir(os.getcwd())
+# for item in scandirContent:
+#     myList.append(item.stat().st_mtime)
+#     lastModified = max(myList)
+# print(lastModified)
+
+for item in scandirContent:
+    for i in listFiles:
+        myList.append(item.stat().st_mtime)
+        lastModified = max(myList)
+        print(i)
+print(i, lastModified)
+    # if max(listFiles, key = x):
+    #     #unixTime = datetime.fromtimestamp(info.st_mtime)
+    #     print(info.st_mtime)
+
+
+>>>>>>> 5e25dcd647559e654e03fea9eed066d9f5ea778f
 """Find name of last accessed filed your current working directory."""
 
 # import os
