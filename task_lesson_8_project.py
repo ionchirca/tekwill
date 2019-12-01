@@ -66,8 +66,8 @@ def guessCapital():
             print("What is the capital of", color.UNDERLINE + f"{key}"\
                  + color.END, "please choose from:" )
             print("\n---------------------------"\
-                 f"\n A) {randomCapital[0]} B) {randomCapital[1]}"\
-                 f"\n C) {randomCapital[2]} D) {randomCapital[3]}"\
+                 f"\n A) {randomCapital[0]}\n B) {randomCapital[1]}"\
+                 f"\n C) {randomCapital[2]}\n D) {randomCapital[3]}"\
                   "\n----------------------------")
             #Dupa shuffle, atasam fiecare varianta de raspuns in lista noua
             #astfel incit sa corespunda ordinii afisate 0,1,2 si 3
@@ -87,7 +87,7 @@ def guessCapital():
             userAnswer = userAnswer.upper()
             #Dam posibilitate utilizatorului sa introduca raspunsul sau in doua
             #moduri, fie alegind A,B,C,D sau sa tapeze denumirea capitalei
-            if userAnswer == countriesDict.get(key)
+            if userAnswer == countriesDict.get(key)\
                or optionsDictionary.get(userAnswer) == countriesDict.get(key):
                 print(color.GREEN + "\nCongrats! Your answer is correct.\n"
                       + color.END)
