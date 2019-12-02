@@ -38,10 +38,6 @@ with open("countries.txt", "r+") as f:
 #Am creat dictionarrulm tara = key, capitala = value
 countriesDict = dict(zip(countryKey, capitalValue))
 
-#Generam, cu ajutorul librariei random, o lista cu 4 elemente
-# luate la intimplare din Lista capitalelor creata mai sus
-randomCapital = random.sample(capitalValue, k = 4)
-
 print(color.BOLD + "\nPlay a game by guessing the countries' capitals.\n"\
       + color.END)
 
@@ -52,6 +48,9 @@ answerCapital = []
 
 #Definim o functie care executa logica quiz-ului
 def guessCapital():
+    #Generam, cu ajutorul librariei random, o lista cu 4 elemente
+    # luate la intimplare din Lista capitalelor creata mai sus
+    randomCapital = random.sample(capitalValue, k = 4)
     #Iteram prin dictionarul ce contine toate elementele din fisier,
     #luam o valoare(capitala) la itimplare pentru a fi ghicita, egalam
     #acea valoare cu al doilea element (putea fi luat orisicare 0,1,2 sau 3)
