@@ -66,6 +66,38 @@ MegaBytes."""
     Age, occupation, age, height
 4. Copy content of file created in ex. 3 in new file (open file in write mode)"""
 
+# import os
+# #Creaza un folder nou in directoria curenta si acceseaza acea directorie
+# newFolder = os.mkdir("newDIR")
+# os.chdir("newDIR")
+# #Creaza un fisier nou in directoria creata si cere de la utilizator
+# #sa introduca info personala, respectind conditia ca age si height sa fie int
+# #in caz contrar se initiaza o exceptie si programul se intrerupe
+# with open("info.txt", "w+") as f:
+#     try:
+#         age = int(input("What is your age? > "))
+#         occupation = str(input("What is your occupation? > "))
+#         height = int(input("What is your height? > "))
+#     except:
+#         ValueError
+#         os.remove("info.txt")
+#         os.chdir("..")
+#         os.rmdir("newDIR")
+#         print("ValueError: Your age and height should take integer values,"\
+#               " execution will be interrupted and all created files"\
+#               " and directories will be deleted because a string was inputed")
+#         exit()
+#     #Daca info introdusa a fost corecta, ea se inscrie in fisier
+#     f.write(f"Age = {age}\nOcuppation = {occupation}\nHeight = {height}\n")
+#     myData = f.read()
+#     print(myData)
+#     f.seek(0)
+# #Info inscrisa in fisier se copie in altul
+# with open("new_info.txt", "w+") as ff:
+#     for item in open("info.txt", "r"):
+#         ff.write(item)
+# print("Task is done: new folder created, new file created,"\
+#       " content copied to another file")
 
 """ Write a program that will count number of lines in a file """
 """ Write a program that will count frequency of a word in a file """

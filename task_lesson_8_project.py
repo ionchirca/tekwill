@@ -1,6 +1,7 @@
 """
 Write a program that will generate question for guessing countrie’s capital
 with 4 options of answers:
+
 1. Read content of file countries.txt and create a dictionary with country
    as it’s key and capital as value
 2. Use random module (import random) in order to get country and it’s capital,
